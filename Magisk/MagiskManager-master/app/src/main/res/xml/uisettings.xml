@@ -1,0 +1,40 @@
+<PreferenceScreen
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/settings_general_category">
+
+        <ListPreference
+            android:key="theme"
+            android:title="@string/settings_theme_title"
+            android:summary="@string/settings_theme_summary"
+            android:defaultValue="Default"
+            android:entries="@array/themes"
+            android:entryValues="@array/themes"/>
+
+        <CheckBoxPreference
+            android:key="busybox"
+            android:defaultValue="false"
+            android:title="@string/settings_busybox_title"
+            android:summary="@string/settings_busybox_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_development_category">
+
+        <CheckBoxPreference
+            android:key="developer_logging"
+            android:defaultValue="false"
+            android:title="@string/settings_developer_logging_title"
+            android:summary="@string/settings_developer_logging_summary" />
+
+        <CheckBoxPreference
+            android:key="shell_logging"
+            android:defaultValue="false"
+            android:title="@string/settings_shell_logging_title"
+            android:summary="@string/settings_shell_logging_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
